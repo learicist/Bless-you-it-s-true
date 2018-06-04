@@ -1,0 +1,42 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+a:hover {
+	outline:none;
+	text-decoration:none;
+}
+
+body {
+	background-color:#edc9af;
+	background-image:url("https://vignette.wikia.nocookie.net/ingo/images/c/c5/Quill-ink.gif/revision/latest?cb=20121223023055");
+	
+}
+
+.main {
+	color:white;
+}
+
+h1 {
+	text-align:center;
+	margin-bottom:10%;
+}
+
+.col-sm-8 {
+	text-align:center;
+	background-color: black;
+	color: white;
+}
+
+.col-sm-2 {
+	color: white;
+	background-color: black;
+	text-align:center;
+}
+
+#topRow {
+	
+	margin-top:27%;
+	
+}
