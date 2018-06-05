@@ -11,32 +11,37 @@ a:hover {
 body {
 	background-color:#edc9af;
 	background-image:url("https://theblogimages.adobe.com/wp-content/uploads/2014/11/quill-1-1800x0-c-default.jpg");
-	background-size: cover;
-}
-
-.main {
-	color:white;
+	/*background-position: center;
+	background-repeat: no-repeat;
+	*/
+	background-size: 100% auto;
 }
 
 h1 {
 	text-align:center;
-	margin-bottom:10%;
-}
-
-.col-sm-8 {
-	text-align:center;
-	background-color: black;
-	color: white;
-}
-
-.col-sm-2 {
-	color: white;
-	background-color: black;
-	text-align:center;
+	margin-bottom:5%;
 }
 
 #topRow {
-	
-	margin-top:27%;
-	
+	padding: none;
+	margin-top:10%;
+	border-radius: 6px;
+	background-color: rgb(0, 0, 0, 0.85);
+	padding: 1px 0;
 }
+
+.col-sm-4 {
+	text-align:center;
+	/*border: 2px solid white;
+	
+	background-color: black;
+	color: white;*/
+}
+
+.btn-primary {
+	/*background-color: green;*/
+
+}
+/*.main {
+	font-size: 60px;
+}*/
