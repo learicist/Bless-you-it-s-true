@@ -8,7 +8,7 @@ $(document).ready(function () {
 	let navButtons = {
 		'about': $('#aboutSummon'),
 		'gall': $('#gallSummon'),
-		'contact': $('#contactSummon')
+		'contact': $('#formSummon')
 	}
 	
 	$('h1').on('mouseenter', function () {
@@ -20,5 +20,7 @@ $(document).ready(function () {
 		$('#pitch').hide(1700);
 		navButtons[this.id].removeClass('hidden');
 		$('#home').removeClass('hidden');
+		
+		//add hidden back to currently displayed div when another is clicked
 	});
 });

@@ -77,6 +77,30 @@ h1 {
 	text-align:center;
 }
 
+#form {
+	list-style: none;
+}
+
+.textbox {
+	background-color: black;
+	border-radius: 6px;
+	margin: 10px 0;
+	padding: 6px;
+}
+
+::placeholder {
+	font-size: 20px;
+	color:white;
+	opacity: 0.8
+}
+
+#send {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	border-radius: 10px;
+	padding: 1%;
+}
+
 #lowRow {
 	justify-content: center;
 	display: flex;
