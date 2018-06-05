@@ -72,6 +72,11 @@ h1 {
 	border-radius: 15px;
 }
 
+.tempPics {
+	margin: 2% auto;
+	text-align:center;
+}
+
 #lowRow {
 	justify-content: center;
 	display: flex;
