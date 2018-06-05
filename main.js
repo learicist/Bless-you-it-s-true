@@ -1,7 +1,7 @@
 $(document).ready(function () {
-	console.log('hello world');
+	//console.log('hello world');
 	
-	$('#home').click(function () {
+	$('#home, h1').on('click', function () {
 		location.reload();
 	});
 	
@@ -10,6 +10,10 @@ $(document).ready(function () {
 		'gall': $('#gallSummon'),
 		'contact': $('#contactSummon')
 	}
+	
+	$('h1').on('mouseenter', function () {
+		$(this).css('cursor', 'pointer');
+	});
 	
 	$('#topRow').on('click', 'button', function () {
 		$('#welcome').hide(1500);
