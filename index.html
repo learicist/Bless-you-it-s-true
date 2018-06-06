@@ -1,99 +1,102 @@
 <!DOCTYPE html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="main.css" type="text/css"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link 
-		rel="stylesheet" 
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-		crossorigin="anonymous"
-	>
-	<script 
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-		crossorigin="anonymous">
-	</script>
-	<title>The Quill</title>
-</head>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link 
+			rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+			crossorigin="anonymous"
+		>
+		<script 
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+			crossorigin="anonymous">
+		</script>
+		<title>The Quill</title>
+	</head>
 
-<body>
-	
-	<div class="container">
-		<div id="title" class="row">
-			<h1 class="col-sm-3">The Quill</h1>
+	<body>
+		
+		<div class="container">
+			<div id="title" class="row">
+				<h1 class="col-sm-3">The Quill</h1>
+			</div>
+			
+			<div id="topRow" class="row">
+				<div class="col-sm-4">
+					<button id="about" class="main">Descriptor Box</button>
+				</div>
+				<div class="col-sm-4">
+					<button id="gall" class="main">Gallery</button>
+				</div>
+				<div class="col-sm-4">
+					<button id="contact" class="main">Contact</button>
+				</div>
+			</div>
+			
+			<div id="midRow" class="row">
+				<div id="welcome" class="col-sm-6">
+					<h4>Hello, and welcome to The Quill.</h4>
+				</div>
+				
+				<div id="aboutSummon" class="col-sm-6 hidden">
+					<h4>"Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth." -Oscar Wilde</h4>
+					<br>
+					<p>If we are least ourselves when we speak as ourselves, then let us be your mask. Here, we provide the opportunity to speak through an intermediary-- or a mask-- in order to tell a truth. A truth that might be too difficult to tell as ourselves, or one that we do not feel we are best equipped to deliver. Even, perhaps, simply one that we wish to e received in a unique and warm way.</p>				
+				</div>
+				
+				<div id="gallSummon" class="col-sm-6 hidden">
+					<img class="tempPics" style="width:70%;display:block; " id="tempPic" src="https://cdn.shopify.com/s/files/1/0890/2490/products/PH3C_1024x1024.jpg?v=1445714747">
+					<img class="tempPics" style="width:70%;display:block; " id="tempPic2" src="http://www.emuseumstore.com/thumbnail.asp?file=assets/images/e-pap2-egyptian-papyrus-pai.jpg&maxx=300&maxy=0">
+					<img class="tempPics" style="width:70%;display:block; " id="tempPic3" src="https://peripluscd.files.wordpress.com/2013/08/egyptian_papyrus_painting_ancient_ship.jpg">
+				</div>
+				
+				<div id="formSummon" class="col-sm-6 hidden">
+					<ul id="form">
+						<form action="mailto:learicist@gmail.com" method="post" enctype="text/plain">
+							<li>
+							  <input class="textbox" type="text" placeholder="Name" required/>
+							</li>
+							<li>
+							  <input class="textbox" type="text" placeholder="Email Address" required/>
+							</li>
+							<li>
+							  <input class="textbox" type="text" placeholder="Phone Number" required/>
+							</li>
+							<li>
+							  <textarea class="textbox" id="messagebox" type="text" placeholder="Message" required></textarea>
+							</li>
+							<button id="send" type="submit">Send</button>
+						</form>
+					</ul>
+				
+				</div>
+				
+				
+				
+				
+				
+				
+			</div>
+			
+			<div id="lowRow" class="row">
+				<div id ="pitch" class="col-sm-6">
+					<h5>Here you will find a service unlike any other.</h5>
+				</div>
+				<button id="home" class="hidden" >Home</button>
+			</div>
+			
+			
 		</div>
 		
-		<div id="topRow" class="row">
-			<div class="col-sm-4">
-				<button id="about" class="main">Descriptor Box</button>
-			</div>
-			<div class="col-sm-4">
-				<button id="gall" class="main">Gallery</button>
-			</div>
-			<div class="col-sm-4">
-				<button id="contact" class="main">Contact</button>
-			</div>
-		</div>
-		
-		<div id="midRow" class="row">
-			<div id="welcome" class="col-sm-6">
-				<h4>Hello, and welcome to The Quill.</h4>
-			</div>
-			
-			<div id="aboutSummon" class="col-sm-6 hidden">
-				<h4>"Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth." -Oscar Wilde</h4>
-				<br>
-				<p>If we are least ourselves when we speak as ourselves, then let us be your mask. Here, we provide the opportunity to speak through an intermediary-- or a mask-- in order to tell a truth. A truth that might be too difficult to tell as ourselves, or one that we do not feel we are best equipped to deliver. Even, perhaps, simply one that we wish to e received in a unique and warm way.</p>				
-			</div>
-			
-			<div id="gallSummon" class="col-sm-6 hidden">
-				<img class="tempPics" style="width:70%;display:block; " id="tempPic" src="https://cdn.shopify.com/s/files/1/0890/2490/products/PH3C_1024x1024.jpg?v=1445714747">
-				<img class="tempPics" style="width:70%;display:block; " id="tempPic2" src="http://www.emuseumstore.com/thumbnail.asp?file=assets/images/e-pap2-egyptian-papyrus-pai.jpg&maxx=300&maxy=0">
-				<img class="tempPics" style="width:70%;display:block; " id="tempPic3" src="https://peripluscd.files.wordpress.com/2013/08/egyptian_papyrus_painting_ancient_ship.jpg">
-			</div>
-			
-			<div id="formSummon" class="col-sm-6 hidden">
-				<ul id="form">
-					<form action="mailto:learicist@gmail.com" method="post" enctype="text/plain">
-						<li>
-						  <input class="textbox" type="text" placeholder="Name" required/>
-						</li>
-						<li>
-						  <input class="textbox" type="text" placeholder="Email Address" required/>
-						</li>
-						<li>
-						  <input class="textbox" type="text" placeholder="Phone Number" required/>
-						</li>
-						<li>
-						  <textarea class="textbox" id="messagebox" type="text" placeholder="Message" required></textarea>
-						</li>
-						<button id="send" type="submit">Send</button>
-					</form>
-				</ul>
-			
-			</div>
-			
-			
-			
-			
-			
-			
-		</div>
-		
-		<div id="lowRow" class="row">
-			<div id ="pitch" class="col-sm-6">
-				<h5>Here you will find a service unlike any other.</h5>
-			</div>
-			<button id="home" class="hidden" >Home</button>
-		</div>
-		
-		
-	</div>
-	
-</body>
+	</body>
 
-<footer>
-	<script src="main.js"></script>
-</footer>
+	<footer>
+		<script src="main.js"></script>
+	</footer>
+	
+</html>
