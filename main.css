@@ -13,8 +13,6 @@ button:focus {
 	outline: none;
 }
 
-
-
 body {
 	background-color:#edc9af;
 	background-image:url("https://theblogimages.adobe.com/wp-content/uploads/2014/11/quill-1-1800x0-c-default.jpg");
@@ -86,6 +84,7 @@ h1 {
 	border-radius: 6px;
 	margin: 10px 0;
 	padding: 6px;
+	color: silver;
 }
 
 ::placeholder {
