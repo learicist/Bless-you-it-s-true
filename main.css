@@ -31,11 +31,8 @@ body {
 	margin: 2% 10% 0 10%;
 	box-shadow: 0px 5px 30px;
 	border-radius: 50px;
-}
-
-p {
 	text-align:center;
-	margin:10% auto 3% auto;	
+	/*margin:10% auto 3% auto;*/
 }
 
 .hidden{
@@ -67,19 +64,47 @@ p {
 	font-family: 'Roboto Slab', serif;
 }
 
+#oscar {
+	display: flex;
+	justify-content: center;
+	/*background-color: rgb(153, 115, 0, 0.5);
+	padding: 5px 5px;*/
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow: 0px 5px 30px;
+	margin: 10% 20% 0% 20%;
+	border-radius: 10px;
+}
+
 #midRow {
 	justify-content: center;
 	display: flex;
-	
 }
 
 #welcome {
-	margin: 30% 20% 15% 20%;
+	margin: 15% 20% 15% 20%;
 	background-color: rgb(153, 115, 0, 0.5);
 	color: black;
 	font-family: 'Roboto Slab', serif;
 	padding: 5px 15px;
 	box-shadow: 0px 5px 30px;
+}
+
+#aboutSummon {
+	display: flex;
+	justify-content: center;
+	/*background-color: rgb(153, 115, 0, 0.5);
+	*/
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow: 0px 5px 30px;
+	margin: 10% 20% 0% 20%;
+	border-radius: 10px;
+	padding: 5px 5px;
 }
 
 .col-sm-6 {
@@ -129,6 +154,7 @@ p {
 	color: white;
 	border-radius: 10px;
 	padding: 1%;
+	margin: 2% 0;
 }
 
 #footTag {
