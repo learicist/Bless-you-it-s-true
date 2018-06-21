@@ -25,11 +25,17 @@ body {
 #title {
 	display: flex;
 	justify-content:center;
+	font-family: 'Spirax', cursive;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 2% 10% 0 10%;
+	box-shadow: 0px 5px 30px;
+	border-radius: 50px;
 }
 
-h1 {
+p {
 	text-align:center;
-	margin:0 25% 5% 25%;
+	margin:10% auto 3% auto;	
 }
 
 .hidden{
@@ -38,7 +44,7 @@ h1 {
 }
 
 #topRow {
-	margin:8% 0;
+	margin:4% 0;
 	border-radius: 6px;
 	/*background-color: rgb(0, 0, 0, 0.88);*/
 	padding: 4px 0;
@@ -57,21 +63,29 @@ h1 {
 	color: white;
 	border-radius: 10px;
 	padding: 2%;
+	font-size: 17px;
+	font-family: 'Roboto Slab', serif;
 }
 
 #midRow {
 	justify-content: center;
 	display: flex;
+	
 }
 
 #welcome {
-	margin: auto 25%;
+	margin: 30% 20% 15% 20%;
+	background-color: rgb(153, 115, 0, 0.5);
+	color: black;
+	font-family: 'Roboto Slab', serif;
+	padding: 5px 15px;
+	box-shadow: 0px 5px 30px;
 }
 
 .col-sm-6 {
 	margin: 2% auto;
 	text-align:center;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	border-radius: 15px;
 }
 
@@ -115,4 +129,9 @@ h1 {
 	color: white;
 	border-radius: 10px;
 	padding: 1%;
+}
+
+#footTag {
+	display: flex;
+	justify-content: center;
 }

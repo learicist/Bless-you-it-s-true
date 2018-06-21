@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	//console.log('hello world');
+	console.log('hello mom');
 	
 	$('#home, h1').on('click', function () {
 		location.reload();
