@@ -95,8 +95,7 @@ body {
 #aboutSummon {
 	display: flex;
 	justify-content: center;
-	/*background-color: rgb(153, 115, 0, 0.5);
-	*/
+	background-color: rgb(153, 115, 0, 0.5);
 	color: black;
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
@@ -127,14 +126,14 @@ body {
 	background-color: black;
 	border-radius: 6px;
 	margin: 10px 0;
-	padding: 6px;
+	padding: 10px;
 	color: silver;
 }
 
 ::placeholder {
 	font-size: 20px;
 	color:white;
-	opacity: 0.8
+	opacity: 0.8;
 }
 
 #send {

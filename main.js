@@ -5,7 +5,7 @@ $(document).ready(function () {
 		location.reload();
 	});
 	
-	$('h1').on('mouseenter', function () {
+	$('#quill').on('mouseenter', function () {
 		$(this).css('cursor', 'pointer');
 	});
 	
@@ -16,8 +16,8 @@ $(document).ready(function () {
 	}
 	
 	$('#topRow').on('click', 'button', function () {
-		$('#welcome').hide(1500);
-		$('#pitch').hide(1700);
+		$('#welcome').hide(1100);
+		$('#pitch').hide(1200);
 		$('#home').removeClass('hidden');		
 		
 		for (let i in navButtons){
