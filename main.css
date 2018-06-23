@@ -126,6 +126,7 @@ body {
 	display: inline-block;
 	justify-content: center;
 	border: 3px solid black;
+	margin-top: 60px;
 }
 
 .gallery {

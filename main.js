@@ -17,14 +17,16 @@ $(document).ready(function () {
 	
 	$('#topRow').on('click', 'button', function () {
 		$('#welcome').hide(1100);
-		$('#pitch').hide(1200);
-		$('#home').removeClass('hidden');		
+		$('#pitch').hide(1100);
+		//$('#home').show(1100);
+		$('#home').removeClass('hidden');
 		
 		for (let i in navButtons){
 			
 			if (navButtons[i] !== navButtons[this.id]) {
 				
 				navButtons[i].addClass('hidden');
+				navButtons[i].fadeOut(1100);
 				//navButtons[i].hide(1500);
 				//USE JQUERY VISUALS INSTEAD
 				
