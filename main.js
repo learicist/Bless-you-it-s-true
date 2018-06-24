@@ -1,12 +1,17 @@
 $(document).ready(function () {
 	console.log('hello mom');
 	
-	$('#home, #quill').on('click', function () {
+	$('#home').click(function () {
 		location.reload();
 	});
 	
-	$('#quill').on('mouseenter', function () {
-		$(this).css('cursor', 'pointer');
+	$('#quill').on({
+		'mouseenter': function () {
+			$(this).css('cursor', 'pointer');
+		},
+		'click': function () {
+			location.reload();
+		},
 	});
 	
 	let navButtons = {
