@@ -26,19 +26,22 @@
 	<body>
 		<div class="container">
 			<div id="title" class="row">
-				<p id="quill" class="col-sm-3">The Quill</p>
+				<p id="quill">The Quill</p>
 			</div>
 			
 			<div id="topRow" class="row">
-				<div class="col-sm-4">
-					<button id="aboutBtn" class="main">Descriptor Box</button>
-				</div>
-				<div class="col-sm-4">
-					<button id="gallBtn" class="main">Gallery</button>
-				</div>
-				<div class="col-sm-4">
-					<button id="contactBtn" class="main">Contact</button>
-				</div>
+				<button 
+					id="aboutBtn" 
+					class="main">About
+				</button>
+				<button 
+					id="gallBtn" 
+					class="main">Gallery
+				</button>
+				<button 
+					id="contactBtn" 
+					class="main">Contact
+				</button>
 			</div>
 			
 			<div id="oscar" class="row">
@@ -49,7 +52,7 @@
 			</div>
 
 			<div id="midRow" class="row">
-				<div id="welcome" class="col-sm-6">				
+				<div id="welcome" class="col-sm-6">			
 					<h3><strong>Is there a certain someone you want, or need, to reach out to? 
 					<br>
 					<br>
@@ -101,23 +104,47 @@
 				<!--ADD FORMSPREE TO FORM-->
 				<div id="formSummon" class="col-sm-6 hidden">
 					<ul id="form">
-						<form action="mailto:learicist@gmail.com" method="post" enctype="text/plain">
+						<form 
+							action="https://formspree.io/learicist@gmail.com" 
+							method="post" 
+							enctype="text/plain">
 							<li>
-							  <input class="textbox" type="text" placeholder="Name" required/>
+							  <input 
+								class="textbox" 
+								type="text" 
+								name="name" 
+								placeholder="Name" 
+								required>
 							</li>
 							<li>
-							  <input class="textbox" type="text" placeholder="Email Address" required/>
+							  <input 
+								class="textbox" 
+								type="text" 
+								name="email" 
+								placeholder="Email Address" 
+								required>
 							</li>
 							<li>
-							  <input class="textbox" type="text" placeholder="Phone Number" required/>
+							  <input 
+								class="textbox" 
+								type="text" 
+								name="phone" 
+								placeholder="Phone Number" 
+								required>
 							</li>
 							<li>
-							  <textarea class="textbox" id="messagebox" type="text" placeholder="Message" required></textarea>
+								<textarea 
+									class="textbox" 
+									id="messagebox" 
+									type="text" 
+									name="message" 
+									placeholder="Message" 
+									required>
+								</textarea>
 							</li>
 							<button id="send" type="submit">Send</button>
 						</form>
 					</ul>
-				
 				</div>
 			</div>
 			

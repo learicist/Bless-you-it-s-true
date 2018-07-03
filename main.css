@@ -26,13 +26,18 @@ body {
 	display: flex;
 	justify-content:center;
 	font-family: 'Spirax', cursive;
-	font-size: 50px;
+	font-size: 4.25em;
 	font-weight: bold;
 	margin: 2% 10% 0 10%;
 	box-shadow: 0px 5px 30px;
 	border-radius: 50px;
 	text-align:center;
-	/*margin:10% auto 3% auto;*/
+	/*margin:10% auto 3% auto;
+	border: 1px solid white;*/
+}
+
+#quill {
+	margin: auto;
 }
 
 .hidden{
@@ -41,17 +46,17 @@ body {
 }
 
 #topRow {
-	margin:4% 0;
+	margin:3% 0;
 	border-radius: 6px;
-	/*background-color: rgb(0, 0, 0, 0.88);*/
+	/*background-color: rgb(0, 0, 0, 0.88);
+	border: 1px solid white;*/
 	padding: 4px 0;
+	display: flex;
+	justify-content: center;
 }
 
 .col-sm-4 {
 	text-align:center;
-	/*border: 2px solid white;
-	background-color: black;
-	color: white;*/
 }
 
 
@@ -59,9 +64,10 @@ body {
 	background-color: rgb(0, 0, 0);
 	color: white;
 	border-radius: 10px;
-	padding: 2%;
+	padding: 1.25%;
 	font-size: 17px;
 	font-family: 'Roboto Slab', serif;
+	margin: auto 2%;
 }
 
 #oscar {
@@ -74,7 +80,7 @@ body {
 	font-size: 20px;
 	font-weight: bold;
 	box-shadow: 0px 5px 30px;
-	margin: 10% 20% 0% 20%;
+	margin: 7% 20% 0% 20%;
 	border-radius: 10px;
 	padding: 8px;
 }
@@ -89,7 +95,7 @@ body {
 }
 
 #welcome {
-	margin: 15% 20% 15% 20%;
+	margin: 10% 20% 15% 20%;
 	background-color: #99730080;
 	color: black;
 	font-family: 'Roboto Slab', serif;
@@ -112,7 +118,6 @@ body {
 }
 
 #about {
-	
 }
 
 .col-sm-6 {
@@ -150,12 +155,12 @@ body {
 	background-color: black;
 	border-radius: 6px;
 	margin: 10px 0;
-	padding: 10px;
+	padding: 2%;
 	color: silver;
 }
 
 ::placeholder {
-	font-size: 20px;
+	font-size: 1.2em;
 	color:white;
 	opacity: 0.8;
 }
