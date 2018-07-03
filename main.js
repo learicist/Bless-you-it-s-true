@@ -1,3 +1,9 @@
+const navButtons = {
+	'aboutBtn': $('#aboutSummon'),
+	'gallBtn': $('#gallSummon'),
+	'contactBtn': $('#formSummon')
+}
+
 $(document).ready(function () {
 	console.log('hello mom');
 	
@@ -14,16 +20,10 @@ $(document).ready(function () {
 		},
 	});
 	
-	let navButtons = {
-		'aboutBtn': $('#aboutSummon'),
-		'gallBtn': $('#gallSummon'),
-		'contactBtn': $('#formSummon')
-	}
-	
 	$('#topRow').on('click', 'button', function () {
 		$('#welcome').hide(1100);
 		$('#pitch').hide(1100);
-		//$('#home').show(1100);
+		$('#oscar').hide(1100);
 		$('#home').removeClass('hidden');
 		
 		for (let i in navButtons){
@@ -31,7 +31,7 @@ $(document).ready(function () {
 			if (navButtons[i] !== navButtons[this.id]) {
 				
 				navButtons[i].addClass('hidden');
-				navButtons[i].fadeOut(1100);
+				//navButtons[i].fadeOut(1100);
 				//navButtons[i].hide(1500);
 				//USE JQUERY VISUALS INSTEAD
 				
