@@ -21,10 +21,20 @@ $(document).ready(function () {
 	});
 	
 	$('#topRow').on('click', 'button', function () {
-		$('#welcome').hide(1100);
-		$('#pitch').hide(1100);
-		$('#oscar').hide(1100);
+		$('#welcome').hide(700);
+		//$('#pitch').hide(1100);
+		$('#oscarQuote').hide(400);
 		$('#home').removeClass('hidden');
+		
+		console.log(this.id);
+		if (this.id == 'aboutBtn') {
+			$('#quotes').removeClass('hidden');
+			$('#bergQuote').removeClass('hidden');
+			//alert('success1');
+		} else {
+			$('#quotes').addClass('hidden');
+			//alert('success2');
+		} 
 		
 		for (let i in navButtons){
 			
