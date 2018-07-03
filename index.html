@@ -106,8 +106,7 @@
 					<ul id="form">
 						<form 
 							action="https://formspree.io/learicist@gmail.com" 
-							method="post" 
-							enctype="text/plain">
+							method="post">
 							<li>
 							  <input 
 								class="textbox" 
@@ -119,7 +118,7 @@
 							<li>
 							  <input 
 								class="textbox" 
-								type="text" 
+								type="email" 
 								name="email" 
 								placeholder="Email Address" 
 								required>
@@ -127,7 +126,7 @@
 							<li>
 							  <input 
 								class="textbox" 
-								type="text" 
+								type="phone" 
 								name="phone" 
 								placeholder="Phone Number" 
 								required>
@@ -142,7 +141,11 @@
 									required>
 								</textarea>
 							</li>
-							<button id="send" type="submit">Send</button>
+							<input 
+								id="send" 
+								type="submit"
+								name="send" 
+								value="Send">
 						</form>
 					</ul>
 				</div>
