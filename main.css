@@ -1,11 +1,6 @@
 * {
 	margin:0;
 	padding:0;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
 }
 
 button:hover {
@@ -19,11 +14,7 @@ button:focus {
 }
 
 body {
-	background-color:#edc9af;
 	background-image:url("https://theblogimages.adobe.com/wp-content/uploads/2014/11/quill-1-1800x0-c-default.jpg");
-	/*background-position: center;
-	background-repeat: no-repeat;
-	*/
 	background-size: 100% auto;
 }
 
@@ -37,8 +28,12 @@ body {
 	box-shadow: 0px 5px 30px;
 	border-radius: 50px;
 	text-align:center;
-	/*margin:10% auto 3% auto;
-	border: 1px solid white;*/
+	/*prevent copy and paste*/
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
 }
 
 #quill {
@@ -53,17 +48,10 @@ body {
 #topRow {
 	margin:3% 0;
 	border-radius: 6px;
-	/*background-color: rgb(0, 0, 0, 0.88);
-	border: 1px solid white;*/
 	padding: 4px 0;
 	display: flex;
 	justify-content: center;
 }
-
-.col-sm-4 {
-	text-align:center;
-}
-
 
 .main {
 	background-color: rgb(0, 0, 0);
@@ -78,8 +66,6 @@ body {
 #quotes {
 	display: flex;
 	justify-content: center;
-	/*background-color: rgb(153, 115, 0, 0.5);
-	padding: 5px 5px;*/
 	color: black;
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
@@ -88,14 +74,6 @@ body {
 	margin: 7% 20% 0% 20%;
 	border-radius: 10px;
 	padding: 8px;
-}
-
-#oscarQuote {
-	text-align: center;
-}
-
-#bergQuote {
-	text-align: center;
 }
 
 #midRow {
@@ -110,6 +88,12 @@ body {
 	font-family: 'Roboto Slab', serif;
 	padding: 5px 15px;
 	box-shadow: 0px 5px 30px;
+	/*prevent copy and paste*/
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
 }
 
 #aboutSummon {
@@ -124,15 +108,17 @@ body {
 	margin: 10% 20% 10% 20%;
 	border-radius: 10px;
 	padding: 5px 8px;
-}
-
-#about {
+	/*prevent copy and paste*/
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
 }
 
 .col-sm-6 {
 	margin: 2% auto;
 	text-align:center;
-	/*border: 2px solid black;*/
 	border-radius: 15px;
 }
 
@@ -142,6 +128,12 @@ body {
 	border: 3px solid black;
 	border-radius: 10px;
 	margin-top: 60px;
+	/*prevent copy and paste*/
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
 }
 
 .gallery {
@@ -150,11 +142,16 @@ body {
 	font-weight: bold;
 	text-align: center;
 	padding: 10px;
-	/*width: 80%;*/
 	margin: 10px;
 	border-radius: 10px;
 	border: 3px solid #B87333;
 	background-image: url("https://res.cloudinary.com/learicist/image/upload/v1529782582/stationary_lbvn2p.jpg");
+	/*prevent copy and paste*/
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
 }
 
 #form {
@@ -167,6 +164,11 @@ body {
 	margin: 10px 0;
 	padding: 2%;
 	color: silver;
+}
+
+.textbox:focus {
+	text-decoration: none;
+	outline: none;
 }
 
 ::placeholder {
@@ -187,7 +189,6 @@ body {
 #lowRow {
 	justify-content: center;
 	display: flex;
-	
 }
 
 #home {
@@ -203,4 +204,10 @@ body {
 #footTag {
 	display: flex;
 	justify-content: center;
+	/*prevent copy and paste*/
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
 }

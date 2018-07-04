@@ -6,7 +6,6 @@ const navButtons = {
 
 $(document).ready(function () {
 	console.log('hello mom');
-	
 	$('#home').click(function () {
 		location.reload();
 	});
@@ -21,37 +20,26 @@ $(document).ready(function () {
 	});
 	
 	$('#topRow').on('click', 'button', function () {
-		$('#welcome').hide(700);
-		//$('#pitch').hide(1100);
+		$('#welcome').hide(400);
 		$('#oscarQuote').hide(400);
 		$('#home').removeClass('hidden');
-		
-		console.log(this.id);
+		//console.log(this.id);
 		if (this.id == 'aboutBtn') {
 			$('#quotes').removeClass('hidden');
 			$('#bergQuote').removeClass('hidden');
-			//alert('success1');
 		} else {
 			$('#quotes').addClass('hidden');
-			//alert('success2');
 		} 
 		
 		for (let i in navButtons){
-			
 			if (navButtons[i] !== navButtons[this.id]) {
-				
 				navButtons[i].addClass('hidden');
 				//navButtons[i].fadeOut(1100);
 				//navButtons[i].hide(1500);
 				//USE JQUERY VISUALS INSTEAD
-				
 			}
 		}		
 		
 		navButtons[this.id].removeClass('hidden');
-		
-		//console.log(navButtons[this.id].hasClass('hidden'));
-		
-		//add hidden back to currently displayed div when another is clicked
 	});
 });
