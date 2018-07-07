@@ -19,7 +19,7 @@
 			crossorigin="anonymous">
 		</script>
 		<!--Fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Spirax|Open+Sans:600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Spirax|Courgette|Open+Sans:600" rel="stylesheet">
 		<title>The Quill</title>
 	</head>
 
@@ -58,20 +58,78 @@
 			</div>
 
 			<div id="midRow" class="row">
+				
+				<div id="slider">
+					<button id="begin">
+						G<br>E<br>T<br><br>S<br>T<br>A<br>R<br>T<br>E<br>D
+					</button>
+					
+					<ul id="customer" class="hidden">
+						<form 
+							action="https://formspree.io/quill.the@gmail.com" 
+							method="post">
+							<li>
+								<input 
+									class="textbox" 
+									type="text" 
+									name="name" 
+									placeholder="Name" 
+									required>
+							</li>
+							<li>
+								<input 
+									class="textbox" 
+									type="email" 
+									name="email" 
+									placeholder="Email Address" 
+									required>
+							</li>
+							<li>
+								<input 
+									class="textbox" 
+									type="phone" 
+									name="phone" 
+									placeholder="Phone Number" 
+									required>
+							</li>
+							
+							<!--THREE BASIC QUESTIONS FOR CUSTOMER SUBMISSION -->
+							
+							<li>
+								<textarea 
+									class="textbox" 
+									type="text" 
+									name="message" 
+									rows="6"
+									cols="40" 
+									placeholder="(Optional) Message" 
+									required></textarea>
+							</li>
+							<input 
+								id="send" 
+								type="submit" 
+								value="Submit">
+						</form>
+					</ul>
+					
+					
+				</div>			
+			
 				<div id="welcome" class="col-sm-6">			
-					<h3><strong>Is there a certain someone you want, or need, to reach out to? 
-					<br>
-					<br>
-					When a text or email just wouldn't suffice, a well-constructed, handwritten letter is 
-					<br>
-					just the ticket. 
-					<br>
-					<br>
-					Come see what I will create for you...
-					<br>
-					Just fill out the three little bits of information and watch me accomplish 
-					<br>
-					your goal.
+					<h3><strong>
+						Is there a certain someone you want, or need, to reach out to? 
+						<br>
+						<br>
+						When a text or email just wouldn't suffice, a well-constructed, handwritten letter is 
+						<br>
+						just the ticket. 
+						<br>
+						<br>
+						Come see what I will create for you...
+						<br>
+						Just fill out the three little bits of information and watch me accomplish 
+						<br>
+						your goal.
 					</strong></h3>
 				</div>
 				
@@ -79,126 +137,129 @@
 					<p id="about">Here, we provide the opportunity to speak through an intermediary in order to express your heartfelt thoughts. Perhaps a letter you wish to be delivered to a special someone in a unique way.</p>				
 				</div>
 				
-				<div id="gallSummon" class="hidden"> <!--col-sm-8 -->
+				<div id="gallSummon" class="hidden"> 
 					<p id="gallTitle">
 						Templates
 					</p>
+					
 					<p class="gallery" id="gallOne">
-						Separation
-						<!-- <br>
-						Dear___________,
-						<br>
-						There are times in all our lives when we need to make changes.
-						<br>
-						Hope that your new journey_____________________________
-						<br>
-						Most sincerely,
-						<br>
-						______________________ -->
+						Congratulations
+						<p id="congrats" class="hidden innerGallery">
+							<br>
+							Dear___________,
+							<br>
+							Please accept my heartiest congratulations on your _______________.
+							<br>
+							I  just heard the news today _________.
+							<br>
+							I am very proud of you. You went after your dream and now _______.
+							<br>
+							Most sincerely,
+							<br>
+							______________________ 
+						</p>
 					</p>
 					
 					<p class="gallery" id="gallTwo">
-						Apology After a Dispute
-						<!-- <br>
-						Dear ___________,
-						<br>
-						After some reflection it is obvious that______________         
-						<br>
-						With Warm Regards,
-						<br>
-						___________________________ -->
+						Separation
+						<p id="separate" class="hidden innerGallery">
+							<br>
+							Dear___________,
+							<br>
+							There are times in all our lives when we need to make changes.
+							<br>
+							Hope that your new journey_____________________________
+							<br>
+							Most sincerely,
+							<br>
+							______________________ 
+						</p>
 					</p>
 					
 					<p class="gallery" id="gallThree">
-					
-						Declaration of Love
-						<!-- Template for Declaration of Love ......
-						<br>
-						Dearest_________________________
-						<br>
-						A miracle of love______________ 
-						<br>
-						Spending time with you_________________
-						<br>
-						Come share_______________________
-						<br>
-						I love _______________________________
-						<br>
-						We can make beautiful moments_________________
-						<br>
-						My joy would be to bring you __________________
-						I adore you!
-						<br>
-						Forever yours
-						<br>
-						____________________________ -->
+						Apology After a Dispute
+						<p id="apology" class="hidden innerGallery">
+							<br>
+							Dear ___________,
+							<br>
+							After some reflection it is obvious that______________
+							<br>
+							What can I do, if anything, to lighten your heart?
+							<br>
+							With Warm Regards,
+							<br>
+							___________________________
+						</p>
 					</p>
-					<p class="gallery" id="gallFour">
 					
-						Reconnecting
-						<!-- Template for Reconnecting ......
-						<br>
-						Dear_________
-						<br>
-						It's been a while since we last spoke or saw one another, with all the time that has passed, I think it has been around_____yrs_______
-						<br>
-						My thoughts down memory lane made me wonder what you have been up to all these years, 
-						<br>
-						What about you? Tell me a little about what you are doing! 
-						<br>
-						I hope to hear back from you, really looking forward to_______
-						<br>
-						<br>
-						With Warm regards________________  -->
+					<p class="gallery" id="gallFour">
+						Declaration of Love
+						<p id="love" class="hidden innerGallery">
+							<br>
+							Dearest_________________________
+							<br>
+							Spending time with you_________________
+							<br>
+							I love you more than anything or anyone in my life!
+							<br>
+							I adore you!
+							<br>
+							Forever yours
+							<br>
+							____________________________
+						</p>
 					</p>
 					<p class="gallery" id="gallFive">
-					
-						New In-Laws
-						<!-- Template for In-Laws ......
-						<br>
-						Dear_____________
-						<br>
-						The fulfilling joy that we’ve all experienced through our children's recent nuptials, has given me____________________________
-						<br>
-						Our children have found one another _____________________
-						<br>
-						Would you care to join our families __________________
-						<br>
-						<br>
-						Awaiting your reply,
-						<br>
-						<br>
-						_____________________-->
+						Reconnecting
+						<p id="connect" class="hidden innerGallery">
+							<br>
+							Dear_________
+							<br>
+							My thoughts down memory lane made me wonder what you have been up to all these years, 
+							<br>
+							What about you? Tell me a little about what you are doing! 
+							<br>
+							With Warm regards,
+							<br>
+							________________
+						</p>
 					</p>
-					<!--<p class="gallery" id="gallSix">
-					
-						Template for New In-Laws
-						 Template for Declaration of Love ......
-						<br>
-						Dearest_________________________
-						<br>
-						A miracle of love______________ 
-						<br>
-						Spending time with you_________________
-						<br>
-						Come share_______________________
-						<br>
-						I love _______________________________
-						<br>
-						We can make beautiful moments_________________
-						<br>
-						My joy would be to bring you __________________
-						I adore you!
-						<br>
-						Forever yours
-						<br>
-						____________________________ 
-					</p>-->
-					
-					
+					<p class="gallery" id="gallSix">
+						New In-Laws
+						<p id="in_laws" class="hidden innerGallery">
+							<br>
+							Dear_____________
+							<br>
+							The fulfilling joy that we’ve all experienced through our children's recent nuptials, has given us the chance 
+							<br>
+							_________________________
+							<br>
+							Would you care to join our families? 
+							<br>
+							__________________
+							<br>
+							Awaiting your reply,
+							<br>
+							_____________________
+						</p>
+					</p>
+					<p class="gallery" id="gallSeven">
+						Condolences
+						<p id="death" class="hidden innerGallery">
+							<br>
+							Dear_____________
+							<br>
+							I would like to express my sincere condolences on the recent passing ____________.
+							<br>
+							You were truly fortunate to have had _________.
+							<br>
+							Sincerely,
+							<br>
+							_____________________
+						</p>
+					</p>
 				</div>
 				
-				<!--ADD FORMSPREE TO FORM-->
 				<div id="formSummon" class="col-sm-6 hidden">
 					<ul id="form">
 						<form 
@@ -233,6 +294,8 @@
 									class="textbox" 
 									type="text" 
 									name="message" 
+									rows="6"
+									cols="40" 
 									placeholder="Message" 
 									required></textarea>
 							</li>
@@ -254,6 +317,10 @@
 
 	<footer>
 		<script src="main.js"></script>
-		<h4 class="fixed-bottom" id="footTag">Susan Leary &copy;2018. All Rights Reserved</h4>
+		<div class="fixed-bottom">
+			<h4 id="footTag">
+				Susan Leary &copy;2018. All Rights Reserved
+			</h4>
+		</div>
 	</footer>
 </html>
