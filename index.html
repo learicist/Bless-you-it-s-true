@@ -32,19 +32,19 @@
 			<div id="topRow" class="row">
 				<button 
 					id="aboutBtn" 
-					class="main">About
+					class="mainBtns">About
 				</button>
 				<button 
 					id="gallBtn" 
-					class="main">Gallery
+					class="mainBtns">Gallery
 				</button>
 				<button 
 					id="contactBtn" 
-					class="main">Contact
+					class="mainBtns">Contact
 				</button>
 			</div>
 			
-			<div id="quotes" class="row">
+			<div id="quotes" class="row main">
 				<p style="text-align:center;" id="oscarQuote"> 
 					"Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth." 
 					<br>
@@ -119,7 +119,7 @@
 								type="text" 
 								name="taboo"
 								rows="4"
-								cols="35"			
+								cols="36"			
 								placeholder="(Optional) Off-limit topics"></textarea>
 						</li>
 						<li>
@@ -128,11 +128,11 @@
 								type="text" 
 								name="message" 
 								rows="6"
-								cols="40" 
+								cols="36" 
 								placeholder="(Optional) Message"></textarea>
 						</li>
 						<input 
-							id="send" 
+							id="submit" 
 							type="submit" 
 							value="Submit">
 					</form>
@@ -140,7 +140,7 @@
 			</div>	
 
 			<div id="midRow" class="row">		
-				<div id="welcome" class="col-sm-6">			
+				<div id="welcome" class="col-sm-6 main">			
 					<h3><strong>
 						Is there a certain someone you want, or need, to reach out to? 
 						<br>
@@ -158,11 +158,11 @@
 					</strong></h3>
 				</div>
 				
-				<div id="aboutSummon" class="col-sm-6 hidden">
+				<div id="aboutSummon" class="col-sm-6 hidden main">
 					<p id="about">Here, we provide the opportunity to speak through an intermediary in order to express your heartfelt thoughts. Perhaps a letter you wish to be delivered to a special someone in a unique way.</p>				
 				</div>
 				
-				<div id="gallSummon" class=" col-sm-8 hidden"> 
+				<div id="gallSummon" class=" col-sm-8 hidden main"> 
 					<p id="gallTitle">
 						Templates
 					</p>
@@ -278,7 +278,7 @@
 					</p>
 				</div>
 				
-				<div id="formSummon" class="col-sm-6 hidden">
+				<div id="formSummon" class="col-sm-6 hidden main">
 					<ul id="form">
 						<form 
 							action="https://formspree.io/quill.the@gmail.com" 
@@ -328,7 +328,7 @@
 			</div><!--midRow-->
 			
 			<div id="lowRow" class="row">
-				<button id="home" class="hidden" >Home</button>
+				<button id="home" class="hidden main">Home</button>
 			</div>
 		</div>
 	</body>

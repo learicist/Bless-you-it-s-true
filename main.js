@@ -33,21 +33,20 @@ $(document).ready(function () {
 		$('#welcome').addClass('hidden');
 		$('#oscarQuote').addClass('hidden');
 		$('#home').removeClass('hidden');
-
+		//accomdate berg quote unique case
 		if (this.id == 'aboutBtn') {
 			$('#quotes').removeClass('hidden');
 			$('#bergQuote').removeClass('hidden');
 		} else {
 			$('#quotes').addClass('hidden');
 		} 
-		
 		//hide non-clicked items
 		for (let i in navButtons){
 			if (navButtons[i] !== navButtons[this.id]) {
 				navButtons[i].addClass('hidden');
 			}
 		}		
-		
+		//display user choice
 		navButtons[this.id].removeClass('hidden');
 	});
 	
@@ -80,11 +79,34 @@ $(document).ready(function () {
 		}
 	});
 	
+	let startFlag = true;
+	let currScreen;
 	$('#begin').on('click', function () {
-		if ($('#customer').hasClass('hidden')) {
+		if (startFlag) {
+			$('.main').each(function () {
+				$(this).addClass('hidden');
+			});
+			$(this).animate({marginLeft: "750px"}, 3000);
+			$('#slider').animate({top: "240px"}, 1800);			
 			$('#customer').removeClass('hidden');
+			$('#customer').animate({
+				/* bottom: "400px", */
+				marginLeft: "660px"
+			}, 3000);
+			startFlag = false;
 		} else {
-			$('#customer').addClass('hidden');
+			$(this).animate({
+				marginLeft: "0px",
+			}, 2500);
+			$('#customer').animate({
+				bottom: "400px",
+				marginLeft: "-300px"
+			}, 3000);
+			setTimeout(function () {
+				$('#home').removeClass('hidden');
+				$('#customer').addClass('hidden');
+			}, 3100);
+			startFlag = true;
 		}
 	});
 });

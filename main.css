@@ -47,8 +47,9 @@ body {
 
 #slider {
 	position: fixed;
-	left: 0;
+	left: -300px;
 	top: 25%;
+	margin-bottom: 10px;
 }
 
 #begin {
@@ -59,10 +60,30 @@ body {
 	font-family: 'Courgette', cursive;
 	width: 50px; 
 	padding: 6px;
-	background-color: black; /* #99730085; */
+	background-color: black;
 	color: white;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
+	position: fixed;
+	left: 0;
+	top: 25%;
+}
+
+#customer {
+	list-style: none;
+	text-align: center;
+	border: 2px solid white;
+	padding: 30px;
+}
+
+#submit {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	border-radius: 10px;
+	padding: 1.25% 2%;
+	font-size: 17px;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 20px;
 }
 
 #topRow {
@@ -73,7 +94,7 @@ body {
 	justify-content: center;
 }
 
-.main {
+.mainBtns {
 	background-color: rgb(0, 0, 0);
 	color: white;
 	border-radius: 10px;
@@ -145,7 +166,7 @@ body {
 #gallSummon {
 	/* display: inline-block;
 	justify-content: center; */
-	border: 0.000009px solid black;
+	border: 0.000001px solid black;
 	border-radius: 10px;
 	margin-top: 20px;
 	padding: 5px 90px 15px 90px;
@@ -260,6 +281,7 @@ body {
 	font-family: 'Roboto Slab', serif;
 	color: black;
 	font-weight: 550;
+	position: fixed;
     bottom: 0;
 	/*prevent copy and paste*/
 	-webkit-user-select: none;
