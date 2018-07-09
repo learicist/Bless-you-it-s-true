@@ -49,7 +49,6 @@ body {
 	position: fixed;
 	left: 0;
 	top: 25%;
-	border: 2px solid white;
 }
 
 #begin {
@@ -59,7 +58,7 @@ body {
 	font-weight: 525;
 	font-family: 'Courgette', cursive;
 	width: 50px; 
-	padding: 8px;
+	padding: 6px;
 	background-color: black; /* #99730085; */
 	color: white;
 	border-top-right-radius: 15px;
@@ -144,9 +143,9 @@ body {
 }
 
 #gallSummon {
-	display: inline-block;
-	justify-content: center;
-	/* border: 3px solid black; */
+	/* display: inline-block;
+	justify-content: center; */
+	border: 0.000009px solid black;
 	border-radius: 10px;
 	margin-top: 20px;
 	padding: 5px 90px 15px 90px;
