@@ -103,8 +103,8 @@ $(document).ready(function () {
 			$('#dropdown').addClass('hidden');
 			console.log(templates[this.id]);
 			let choice = templates[this.id];
-			let choiceElement = $('<textarea class="textbox hidden" type="text" name="userTemplateChoice" rows="2" cols="10">' + choice + '</textarea>');
-			choiceElement.appendTo($('#customer'));
+			let choiceElement = $('<textarea class="textbox" type="text" name="userTemplateChoice" rows="2" cols="10">' + choice + '</textarea>');
+			choiceElement.insertBefore($('#submit'));
 		});
 		
 		
