@@ -14,6 +14,17 @@ const gallery = [
 	{name: 'gallSeven', tag: $('#gallSeven'), content: $('#death')},
 ];
 
+const templates = {
+	1: 'congratulaions',
+	2: 'separation',
+	3: 'apology',
+	4: 'love',
+	5: 'reconnect',
+	6: 'in-laws',
+	7: 'condolences'
+}
+
+
 $(document).ready(function () {
 	console.log('hello mom');
 	$('#home').click(function () {
@@ -82,31 +93,38 @@ $(document).ready(function () {
 	let startFlag = true;
 	let currScreen;
 	$('#begin').on('click', function () {
+		
+		$('#chooseTemp').click(function () {
+			$('#drOptions').toggleClass('hidden');
+		});
+		
+		$('#dropdown').on('click', 'a', function () {
+			$('#customer').removeClass('hidden');
+			$('#dropdown').addClass('hidden');
+			console.log(templates[this.id]);
+			let choice = templates[this.id];
+			let choiceElement = $('<textarea class="textbox hidden" type="text" name="userTemplateChoice" rows="2" cols="10">' + choice + '</textarea>');
+			choiceElement.appendTo($('#customer'));
+		});
+		
+		
 		if (startFlag) {
 			$('.main').each(function () {
 				$(this).addClass('hidden');
 			});
-			$(this).animate({marginLeft: "750px"}, 3000);
-			$('#slider').animate({top: "240px"}, 1800);			
-			$('#customer').removeClass('hidden');
-			$('#customer').animate({
-				/* bottom: "400px", */
-				marginLeft: "660px"
-			}, 3000);
+			$(this).animate({marginLeft: "350px"}, 1800);
+			$('#slider').animate({top: "240px", left: "0px"}, 1800);	
+			
 			startFlag = false;
 		} else {
-			$(this).animate({
-				marginLeft: "0px",
-			}, 2500);
-			$('#customer').animate({
-				bottom: "400px",
-				marginLeft: "-300px"
-			}, 3000);
+			$(this).animate({marginLeft: "0px"}, 1800);
+			$('#slider').animate({left: "-350px"}, 1800);
 			setTimeout(function () {
 				$('#home').removeClass('hidden');
-				$('#customer').addClass('hidden');
-			}, 3100);
+				//$('#customer').addClass('hidden');
+			}, 2100);
 			startFlag = true;
 		}
+		
 	});
 });
