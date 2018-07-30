@@ -16,6 +16,7 @@ button:focus {
 body {
 	background-image:url("https://theblogimages.adobe.com/wp-content/uploads/2014/11/quill-1-1800x0-c-default.jpg");
 	background-size: 100% auto;
+	overflow: scroll;
 }
 
 #title {
@@ -49,7 +50,7 @@ body {
 	position: fixed;
 	left: -300px;
 	top: 25%;
-	margin-bottom: 10px;
+	bottom: 100px;
 }
 
 #begin {
@@ -74,6 +75,7 @@ body {
 	text-align: center;
 	border: 2px solid white;
 	padding: 30px;
+	border: 2px solid white;
 }
 
 #submit {
@@ -303,7 +305,7 @@ body {
 	font-family: 'Roboto Slab', serif;
 	color: black;
 	font-weight: 550;
-	position: fixed;
+	position: bottom;
     bottom: 0;
 	/*prevent copy and paste*/
 	-webkit-user-select: none;
