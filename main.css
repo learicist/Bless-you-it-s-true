@@ -13,10 +13,32 @@ button:focus {
 	outline: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #99730080; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #000; 
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
+
 body {
 	background-image:url("https://theblogimages.adobe.com/wp-content/uploads/2014/11/quill-1-1800x0-c-default.jpg");
 	background-size: 100% auto;
-	overflow: scroll;
+	/* overflow: scroll; */
 }
 
 #title {
@@ -73,9 +95,9 @@ body {
 #customer {
 	list-style: none;
 	text-align: center;
-	border: 2px solid white;
-	padding: 30px;
-	border: 2px solid white;
+	padding: 25px;
+	height: 350px;
+	overflow-y: scroll;
 }
 
 #submit {
@@ -100,7 +122,7 @@ body {
 	background-color: rgb(0, 0, 0);
 	color: white;
 	border-radius: 10px;
-	padding: 1.25%;
+	padding: 1%;
 	font-size: 17px;
 	font-family: 'Roboto Slab', serif;
 	margin: auto 2%;
@@ -114,7 +136,7 @@ body {
 	font-size: 20px;
 	font-weight: bold;
 	box-shadow: 0px 5px 30px;
-	margin: 7% 20% 0% 20%;
+	margin: 4% 20% 0% 20%;
 	border-radius: 10px;
 	padding: 8px;
 }
@@ -125,7 +147,7 @@ body {
 }
 
 #welcome {
-	margin: 10% 20% 15% 20%;
+	margin: 7% 20% 15% 20%;
 	background-color: #99730080;
 	color: black;
 	font-family: 'Roboto Slab', serif;
@@ -148,7 +170,7 @@ body {
 	font-size: 25px;
 	font-weight: bold;
 	box-shadow: 0px 5px 30px;
-	margin: 10% 20% 10% 20%;
+	margin: 7% 20% 5% 20%;
 	border-radius: 10px;
 	padding: 12px 17px;
 	/*prevent copy and paste*/
@@ -188,6 +210,7 @@ body {
 	margin: 2% auto 10% auto;
 	box-shadow: 0px 0px 5px;
 	border-radius: 5px;
+	padding-bottom: 1%;
 }
 
 .gallery {

@@ -93,36 +93,43 @@ $(document).ready(function () {
 	let startFlag = true;
 	let currScreen;
 	$('#begin').on('click', function () {
-		
+		//handle the dropdown function
 		$('#chooseTemp').click(function () {
 			$('#drOptions').toggleClass('hidden');
 		});
 		
+		//handle and store the template choice of the user
 		$('#dropdown').on('click', 'a', function () {
+			//if any of the choices are selected...
 			$('#customer').removeClass('hidden');
 			$('#dropdown').addClass('hidden');
-			console.log(templates[this.id]);
 			let choice = templates[this.id];
 			let choiceElement = $('<textarea class="textbox hidden" type="text" name="userTemplateChoice" rows="2" cols="10">' + choice + '</textarea>');
 			choiceElement.insertBefore($('#submit'));
 		});
 		
-		
+		//handle the entrance of the #slider div
 		if (startFlag) {
+			//go through the main elements and hide them
 			$('.main').each(function () {
 				$(this).addClass('hidden');
 			});
-			$(this).animate({marginLeft: "350px"}, 1800);
-			$('#slider').animate({top: "240px", left: "0px"}, 1800);	
-			
+			//bring button out into page
+			$(this).animate({marginLeft: "350px"}, 2000);
+			//bring div out into page
+			$('#slider').animate({top: "140px", left: "0px"}, 2000);
+			//set flag
 			startFlag = false;
 		} else {
-			$(this).animate({marginLeft: "0px"}, 1800);
-			$('#slider').animate({left: "-350px"}, 1800);
+			//hide button again
+			$(this).animate({marginLeft: "0px"}, 2000);
+			//hide div again
+			$('#slider').animate({left: "-350px"}, 2000);
+			//show home button
 			setTimeout(function () {
 				$('#home').removeClass('hidden');
-				//$('#customer').addClass('hidden');
 			}, 2100);
+			//set flag
 			startFlag = true;
 		}
 		
