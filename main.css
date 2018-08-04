@@ -32,7 +32,7 @@ button:focus {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #555; 
+	/* background: #555;  */
 }
 
 body {
@@ -69,7 +69,7 @@ body {
 }
 
 #slider {
-	position: fixed;
+	position: absolute;
 	left: -300px;
 	top: 25%;
 	bottom: 100px;
@@ -96,8 +96,8 @@ body {
 	list-style: none;
 	text-align: center;
 	padding: 25px;
-	height: 350px;
-	overflow-y: scroll;
+	/* height: 250px;
+	overflow-y: scroll; */
 }
 
 #submit {

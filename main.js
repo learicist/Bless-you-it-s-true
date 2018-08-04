@@ -112,7 +112,10 @@ $(document).ready(function () {
 		if (startFlag) {
 			//go through the main elements and hide them
 			$('.main').each(function () {
-				$(this).addClass('hidden');
+				if ($(this).hasClass('hidden') == false) {
+					$(this).css('visibility', 'hidden');
+				}				
+				//$(this).addClass('hidden');
 			});
 			//bring button out into page
 			$(this).animate({marginLeft: "350px"}, 2000);
