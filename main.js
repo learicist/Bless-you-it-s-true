@@ -24,7 +24,6 @@ const templates = {
 	7: 'condolences'
 }
 
-
 $(document).ready(function () {
 	console.log('hello mom');
 	$('#home').click(function () {
@@ -40,11 +39,15 @@ $(document).ready(function () {
 		},
 	});
 	
+	//handle main buttons
 	$('#topRow').on('click', 'button', function () {
 		$('#welcome').addClass('hidden');
 		$('#oscarQuote').addClass('hidden');
-		$('#home').removeClass('hidden');
-		//accomdate berg quote unique case
+		//only display home button if customer form is not visible
+		if (!customerFlag) {
+			$('#home').removeClass('hidden');
+		}
+		//accomodate berg quote unique case
 		if (this.id == 'aboutBtn') {
 			$('#quotes').removeClass('hidden');
 			$('#bergQuote').removeClass('hidden');
@@ -90,9 +93,11 @@ $(document).ready(function () {
 		}
 	});
 	
+	//customer patronage button functions
 	let startFlag = true;
-	let currScreen;
 	$('#begin').on('click', function () {
+		//scroll to top of page
+		window.scrollTo(0, 0);
 		//handle the dropdown function
 		$('#chooseTemp').click(function () {
 			$('#drOptions').toggleClass('hidden');
@@ -117,24 +122,28 @@ $(document).ready(function () {
 				}				
 				//$(this).addClass('hidden');
 			});
+			//turn off nav buttons
+			$('#topRow').css('pointer-events', 'none');
 			//bring button out into page
-			$(this).animate({marginLeft: "350px"}, 2000);
+			$(this).animate({marginLeft: "325px"}, 2000);
 			//bring div out into page
-			$('#slider').animate({top: "140px", left: "0px"}, 2000);
+			$('#slider').animate({top: "30%", left: "0px"}, 2000);
 			//set flag
 			startFlag = false;
 		} else {
 			//hide button again
 			$(this).animate({marginLeft: "0px"}, 2000);
+			//turn on nav buttons
+			$('#topRow').css('pointer-events', 'auto');
 			//hide div again
 			$('#slider').animate({left: "-350px"}, 2000);
 			//show home button
 			setTimeout(function () {
-				$('#home').removeClass('hidden');
+				$('#home').removeClass('hidden').css('visibility', 'visible');
 			}, 2100);
 			//set flag
 			startFlag = true;
 		}
-		
 	});
+	
 });
