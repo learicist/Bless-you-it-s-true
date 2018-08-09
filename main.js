@@ -24,6 +24,8 @@ const templates = {
 	7: 'condolences'
 }
 
+let startFlag = true;
+
 $(document).ready(function () {
 	console.log('hello mom');
 	$('#home').click(function () {
@@ -44,7 +46,7 @@ $(document).ready(function () {
 		$('#welcome').addClass('hidden');
 		$('#oscarQuote').addClass('hidden');
 		//only display home button if customer form is not visible
-		if (!customerFlag) {
+		if (startFlag) {
 			$('#home').removeClass('hidden');
 		}
 		//accomodate berg quote unique case
@@ -94,7 +96,6 @@ $(document).ready(function () {
 	});
 	
 	//customer patronage button functions
-	let startFlag = true;
 	$('#begin').on('click', function () {
 		//scroll to top of page
 		window.scrollTo(0, 0);
@@ -120,7 +121,6 @@ $(document).ready(function () {
 				if ($(this).hasClass('hidden') == false) {
 					$(this).css('visibility', 'hidden');
 				}				
-				//$(this).addClass('hidden');
 			});
 			//turn off nav buttons
 			$('#topRow').css('pointer-events', 'none');
@@ -137,9 +137,16 @@ $(document).ready(function () {
 			$('#topRow').css('pointer-events', 'auto');
 			//hide div again
 			$('#slider').animate({left: "-350px"}, 2000);
+			
+			//RESET VISIBILITY OF '.MAIN' ELEMENTS
+						
+			
 			//show home button
 			setTimeout(function () {
-				$('#home').removeClass('hidden').css('visibility', 'visible');
+				$('.main').each(function () {
+					$(this).css('visibility', 'visible');			
+				});
+				$('#home').removeClass('hidden');
 			}, 2100);
 			//set flag
 			startFlag = true;
