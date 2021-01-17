@@ -36,7 +36,7 @@ button:focus {
 }
 
 body {
-	background-image:url("https://theblogimages.adobe.com/wp-content/uploads/2014/11/quill-1-1800x0-c-default.jpg");
+	background-image:url("https://res.cloudinary.com/learicist/image/upload/v1610908353/quill_ubljva.jpg");
 	background-size: 100% auto;
 	/* overflow: scroll; */
 }
