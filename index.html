@@ -7,15 +7,15 @@
 		<link rel="stylesheet" href="main.css" type="text/css"/>
 		<!--jQuery and Bootstrap-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link 
-			rel="stylesheet" 
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 			crossorigin="anonymous"
 		>
-		<script 
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 			crossorigin="anonymous">
 		</script>
 		<!--Fonts-->
@@ -28,25 +28,25 @@
 			<div id="title" class="row">
 				<p id="quill">The Quill</p>
 			</div>
-			
+
 			<div id="topRow" class="row">
-				<button 
-					id="aboutBtn" 
+				<button
+					id="aboutBtn"
 					class="mainBtns">About
 				</button>
-				<button 
-					id="gallBtn" 
+				<button
+					id="gallBtn"
 					class="mainBtns">Gallery
 				</button>
-				<button 
-					id="contactBtn" 
+				<button
+					id="contactBtn"
 					class="mainBtns">Contact
 				</button>
 			</div>
-			
+
 			<div id="quotes" class="row main">
-				<p style="text-align:center;" id="oscarQuote"> 
-					"Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth." 
+				<p style="text-align:center;" id="oscarQuote">
+					"Man is least himself when he talks in his own person. Give him a mask, and he will tell you the truth."
 					<br>
 					- Oscar Wilde
 				</p>
@@ -56,92 +56,93 @@
 					- Ingrid Bergman
 				</p>
 			</div>
-			
+
 			<div id="slider">
 				<button id="begin">
 					G<br>E<br>T<br><br>S<br>T<br>A<br>R<br>T<br>E<br>D
 				</button>
-				
+
 				<ul id="customer" class="hidden">
-					<form 
-						action="https://formspree.io/quill.the@gmail.com" 
+					<form
+						action="https://formspree.io/quill.the@gmail.com"
 						method="post">
 						<li>
-							<input 
-								class="textbox" 
-								type="text" 
-								name="name" 
+							<input
+								class="textbox"
+								type="text"
+								name="name"
 								size="30"
-								placeholder="Name" 
+								placeholder="Name"
 								required>
 						</li>
 						<li>
-							<input 
-								class="textbox" 
-								type="text" 
-								name="email" 
+							<input
+								class="textbox"
+								type="text"
+								name="email"
 								size="30"
-								placeholder="Email Address" 
+								placeholder="Email Address"
 								required>
 						</li>
 						<li>
-							<input 
-								class="textbox" 
-								type="text" 
-								name="phone" 
-								size="30" 
-								placeholder="Phone Number" 
+							<input
+								class="textbox"
+								type="text"
+								name="phone"
+								size="30"
+								placeholder="Phone Number"
 								required>
 						</li>
-						
+
 						<!--THREE BASIC QUESTIONS FOR CUSTOMER SUBMISSION -->
 						<li>
 							<!-- <label>How long has it been since your last contact?</label> -->
-							<input 
-								class="textbox" 
-								type="text" 
+							<input
+								class="textbox"
+								type="text"
 								name="time"
 								size="30"
-								placeholder="Length of time since last contact" 
+								placeholder="Length of time since last contact"
 								required>
 						</li>
 						<li>
-							<input 
-								class="textbox" 
-								type="text" 
+							<input
+								class="textbox"
+								type="text"
 								size="30"
-								name="relation" 
-								placeholder="Relationship" 
+								name="relation"
+								placeholder="Relationship"
 								required>
 						</li>
 						<li>
-							<textarea 
-								class="textbox" 
-								type="text" 
+							<textarea
+								class="textbox"
+								type="text"
 								name="taboo"
 								rows="3"
-								cols="36"			
+								cols="36"
 								placeholder="(Optional) Off-limit topics"></textarea>
 						</li>
 						<li>
-							<textarea 
-								class="textbox" 
-								type="text" 
-								name="message" 
+							<textarea
+								class="textbox"
+								type="text"
+								name="message"
 								rows="3"
-								cols="36" 
+								cols="36"
 								placeholder="(Optional) Message"></textarea>
 						</li>
 						<!--new element-->
-						<input 
-							id="submit" 
-							type="submit" 
+						<input
+							id="submit"
+							type="submit"
 							value="Submit">
+							<!-- MAKE IT SO USER RETURNS TO HOME PAGE AFTER SUBMIT-->
 					</form>
 				</ul>
-				
+
 				<div id="dropdown">
-					<button id="chooseTemp" class="dropbtn">Choose your template &#9660 </button>
+					<button id="chooseTemp" class="dropbtn">Choose your template &#9660;</button>
 					<div id="drOptions" class="dropdown-content hidden">
 						<a id="1" href="#">Congratulations</a>
 						<a id="2" href="#">Separation</a>
@@ -152,18 +153,18 @@
 						<a id="7" href="#">Condolences</a>
 					</div> <!--drOptions-->
 				</div><!--dropdown-->
-				
+
 			</div>	<!--slider-->
 
-			<div id="midRow" class="row main">			
-				<div id="welcome" class="col-sm-6">			
+			<div id="midRow" class="row main">
+				<div id="welcome" class="col-sm-6">
 					<h3><strong>
-						Is there a certain someone you want, or need, to reach out to? 
+						Is there a certain someone you want, or need, to reach out to?
 						<br>
 						<br>
-						When a text or email just wouldn't suffice, a well-constructed, handwritten letter is 
+						When a text or email just wouldn't suffice, a well-constructed, handwritten letter is
 						<br>
-						just the ticket. 
+						just the ticket.
 						<br>
 						<br>
 						Come see what I will create for you...
@@ -171,16 +172,16 @@
 						Just click 'Get Started', and watch me accomplish your goal.
 					</strong></h3>
 				</div>
-				
+
 				<div id="aboutSummon" class="col-sm-6 hidden">
-					<p id="about">Here, we provide the opportunity to speak through an intermediary in order to express your heartfelt thoughts. Perhaps a letter you wish to be delivered to a special someone in a unique way.</p>				
+					<p id="about">Here, we provide the opportunity to speak through an intermediary in order to express your heartfelt thoughts. Perhaps a letter you wish to be delivered to a special someone in a unique way.</p>
 				</div>
-				
-				<div id="gallSummon" class=" col-sm-8 hidden"> 
+
+				<div id="gallSummon" class=" col-sm-8 hidden">
 					<p id="gallTitle">
 						Templates
 					</p>
-					
+
 					<p class="gallery" id="gallOne">
 						Congratulations
 						<p id="congrats" class="hidden innerGallery">
@@ -194,10 +195,10 @@
 							<br>
 							Most sincerely,
 							<br>
-							______________________ 
+							______________________
 						</p>
 					</p>
-					
+
 					<p class="gallery" id="gallTwo">
 						Separation
 						<p id="separate" class="hidden innerGallery">
@@ -209,10 +210,10 @@
 							<br>
 							Most sincerely,
 							<br>
-							______________________ 
+							______________________
 						</p>
 					</p>
-					
+
 					<p class="gallery" id="gallThree">
 						Apology After a Dispute
 						<p id="apology" class="hidden innerGallery">
@@ -227,7 +228,7 @@
 							_______________
 						</p>
 					</p>
-					
+
 					<p class="gallery" id="gallFour">
 						Declaration of Love
 						<p id="love" class="hidden innerGallery">
@@ -249,9 +250,9 @@
 						<p id="connect" class="hidden innerGallery">
 							Dear_________
 							<br>
-							My thoughts down memory lane made me wonder what you have been up to all these years, 
+							My thoughts down memory lane made me wonder what you have been up to all these years,
 							<br>
-							What about you? Tell me a little about what you are doing! 
+							What about you? Tell me a little about what you are doing!
 							<br>
 							With Warm regards,
 							<br>
@@ -263,11 +264,11 @@
 						<p id="in_laws" class="hidden innerGallery">
 							Dear_____________
 							<br>
-							The fulfilling joy that we’ve all experienced through our children's recent nuptials, has given us the chance to 
+							The fulfilling joy that we’ve all experienced through our children's recent nuptials, has given us the chance to
 							<br>
 							_______________
 							<br>
-							Would you care to join our families? 
+							Would you care to join our families?
 							<br>
 							_______________
 							<br>
@@ -291,61 +292,63 @@
 						</p>
 					</p>
 				</div>
-				
+
 				<div id="formSummon" class="col-sm-6 hidden">
 					<ul id="form">
-						<form 
-							action="https://formspree.io/quill.the@gmail.com" 
+						<form
+							action="https://formspree.io/quill.the@gmail.com"
 							method="post">
 							<li>
-								<input 
-									class="textbox" 
-									type="text" 
-									name="name" 
-									placeholder="Name" 
-									required>
+								<input
+									class="textbox"
+									type="text"
+									name="name"
+									placeholder="Name"
+									required/>
 							</li>
 							<li>
-								<input 
-									class="textbox" 
-									type="email" 
-									name="email" 
-									placeholder="Email Address" 
-									required>
+								<input
+									class="textbox"
+									type="email"
+									name="email"
+									placeholder="Email Address"
+									required/>
 							</li>
 							<li>
-								<input 
-									class="textbox" 
-									type="phone" 
-									name="phone" 
-									placeholder="Phone Number" 
-									required>
+								<input
+									class="textbox"
+									type="phone"
+									name="phone"
+									placeholder="Phone Number"
+									required/>
 							</li>
 							<li>
-								<textarea 
-									class="textbox" 
-									type="text" 
-									name="message" 
+								<textarea
+									class="textbox"
+									type="text"
+									name="message"
 									rows="6"
-									cols="35" 
-									placeholder="Message" 
-									required></textarea>
+									cols="35"
+									placeholder="Message"
+									required/>
+								</textarea>
 							</li>
-							<input 
-								id="send" 
-								type="submit" 
-								value="Submit">
+							<input
+								id="send"
+								type="submit"
+								value="Submit"/>
 								<!-- name="send" -->
+								<!-- MAKE IT SO USER RETURNS TO HOME PAGE AFTER SUBMIT-->
 						</form>
 					</ul>
 				</div><!--formSummon-->
-			
+
 			</div><!--midRow-->
-			
+
 			<div id="lowRow" class="row">
 				<button id="home" class="hidden main">Home</button>
 			</div>
-			
+
 		</div><!--container-->
 	</body>
 
